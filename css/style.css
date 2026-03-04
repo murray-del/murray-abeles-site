@@ -309,14 +309,47 @@ nav a.linkedin-icon:hover svg {
     border-bottom: 1px solid var(--color-border);
 }
 
-.press-section ul li a {
+.press-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.press-logo {
+    flex-shrink: 0;
+    width: 80px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.press-logo img {
+    max-width: 80px;
+    max-height: 28px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: filter 0.2s, opacity 0.2s;
+}
+
+.press-section ul li:hover .press-logo img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.press-item a {
     color: var(--color-text);
     text-decoration: none;
     font-size: 0.97rem;
     font-weight: 500;
+    line-height: 1.4;
 }
 
-.press-section ul li a:hover {
+.press-item a:hover {
     text-decoration: underline;
 }
 
