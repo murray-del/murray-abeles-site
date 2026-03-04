@@ -1,0 +1,14 @@
+# Node modules (if any)
+node_modules/
+
+# Build or generated files
+dist/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
+.vscode/
