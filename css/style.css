@@ -162,7 +162,8 @@ nav a.linkedin-icon:hover svg {
    ========================================= */
 .hero-full {
     position: relative;
-    height: calc(100vh - var(--header-height));
+    margin-top: calc(-1 * var(--header-height));
+    height: 100vh;
     background: url('../images/PXL_20250730_222153449.MP.jpg') center center / cover no-repeat;
     display: flex;
     align-items: flex-end;
@@ -188,7 +189,8 @@ nav a.linkedin-icon:hover svg {
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 20px;
-    max-width: 680px;
+    max-width: 560px;
+    margin-left: auto;
 }
 
 .hero-content strong {
@@ -198,7 +200,8 @@ nav a.linkedin-icon:hover svg {
 .hero-content ul {
     list-style: none;
     padding: 0;
-    max-width: 680px;
+    max-width: 560px;
+    margin-left: auto;
 }
 
 .hero-content ul li {
